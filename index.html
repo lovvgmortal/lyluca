@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <title>LONG MORTAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        /* Scale down the entire UI to 90% */
+        font-size: 90%;
+      }
+
+      :root {
+        --brand-bg: 210 40% 98%;
+        --brand-surface: 0 0% 100%;
+        --brand-primary: 221 83% 53%;
+        --brand-secondary: 215 9% 65%;
+        --brand-text: 222 47% 11%;
+        --brand-text-secondary: 215 14% 34%;
+        --brand-text-inverse: 0 0% 100%;
+      }
+
+      .dark {
+        --brand-bg: 0 0% 4%;
+        --brand-surface: 0 0% 10%;
+        --brand-primary: 0 0% 98%;
+        --brand-secondary: 0 0% 45%;
+        --brand-text: 0 0% 90%;
+        --brand-text-secondary: 0 0% 64%;
+        --brand-text-inverse: 0 0% 4%;
+      }
+
+      body {
+        background-color: hsl(var(--brand-bg));
+        color: hsl(var(--brand-text));
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': 'hsl(var(--brand-bg) / <alpha-value>)',
+              'brand-surface': 'hsl(var(--brand-surface) / <alpha-value>)',
+              'brand-primary': 'hsl(var(--brand-primary) / <alpha-value>)',
+              'brand-secondary': 'hsl(var(--brand-secondary) / <alpha-value>)',
+              'brand-text': 'hsl(var(--brand-text) / <alpha-value>)',
+              'brand-text-secondary': 'hsl(var(--brand-text-secondary) / <alpha-value>)',
+              'brand-text-inverse': 'hsl(var(--brand-text-inverse) / <alpha-value>)',
+            },
+            keyframes: {
+              'slide-in-right': {
+                '0%': { transform: 'translateX(calc(100% + 1rem))', opacity: '0' },
+                '100%': { transform: 'translateX(0)', opacity: '1' },
+              },
+              'slide-in-up': {
+                '0%': { transform: 'translateY(calc(100% + 1rem))', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              'fade-out': {
+                'from': { opacity: '1' },
+                'to': { opacity: '0', visibility: 'hidden' },
+              }
+            },
+            animation: {
+              'slide-in-right': 'slide-in-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
+              'slide-in-up': 'slide-in-up 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
+              'fade-out': 'fade-out 0.4s ease-out forwards'
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.8.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
