@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm lyluca</h1>
-- ⚡ Fun fact **:)**
+- ⚡ Fun fact - :)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
