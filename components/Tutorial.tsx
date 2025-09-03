@@ -210,162 +210,307 @@ Please rearrange the following information structure:
 - **Exaggeration indicators**: [Potentially unrealistic claims]
 - **Source credibility**: [How authoritative claims were supported]`;
 
-const prompt2 = `You are an elite military analyst and combat correspondent with 25+ years of experience covering modern warfare. Your mission is to create a completely fictional but tactically realistic military scenario that is EXACTLY 1850-2300 words.
+const prompt2 = `
+Using the outline and database provided, write a complete military scenario script optimized for ElevenLabs text-to-speech. Your output must be ONLY the final, raw script text. Do not include any headings, section titles, or any other text that is not part of the narration.
 
-## Critical Length Requirements
+Core Thematic Goal: The script must function as a "Trojan Horse." It should engage an audience interested in military strategy and technology for the first ~80% of the script. However, the final conclusion must pivot dramatically to deliver a strong, unambiguous commentary that is anti-violence, anti-war, and pro-peace. The detailed destruction and advanced technology described earlier in the script must be re-framed as a cautionary tale about the horrific futility of modern conflict.
 
-**WORD COUNT ENFORCEMENT:**
-- The scenario MUST be between 1850-2300 words - this is non-negotiable
-- Count every word carefully to ensure you meet this requirement
-- If your first draft is too short, expand with more tactical details, specific weapon descriptions, additional combat phases, and deeper analysis
-- Include extensive technical specifications, multiple engagement phases, detailed casualty reports, and comprehensive strategic analysis
+STRUCTURE
 
-## Mandatory Data Integration Requirements
+Opening Hook (Shock & Awe)
 
-**MUST USE PROVIDED DATA:**
-- Date: [Insert specific date] - MUST be included exactly as provided
-- Time: [Insert specific time] - MUST include exact time with ""local time"" format
-- Location: [Insert location] - MUST use exact location names provided
-- Attacking side: [Insert attacking force] - MUST use exact force designation
-- Defending side: [Insert defending force] - MUST use exact force designation
-- Scale: [Insert scale] - MUST incorporate the specified scale
-- Key weapons: [Insert weapon systems] - MUST feature the specified weapons prominently
+4-5 rapid, shocking sentences: Start immediately with the largest numbers of casualties and destruction.
 
-**TIMELINE REQUIREMENTS:**
-- Open with exact date and time: ""On [DATE], at [TIME] local time...""
-- Include clear time progression throughout the scenario
-- Use specific timestamps for major events (e.g., ""At 06:45 local time..."", ""By 14:30..."")
-- Show battle duration clearly from start to finish
+No time/date setup: Jump straight into the action.
 
-**OUTPUT FORMAT:**
-- Each sentence must be on a separate line
-- Use CAPITAL LETTERS only for key tactical terms, weapons, locations, and critical moments
-- Strategic capitalization - do not overuse
-- NO section headers in the output - pure narrative only
-- Start directly with the scenario using provided data
-- End with CTA including [insert channel youtube]
+Example: "Forty-eight drones destroyed in under sixty seconds. Eight hundred elite soldiers wiped off the battle map. Over twelve billion dollars in advanced military hardware turned to scrap metal in a single counter-attack. This is what happened when..."
 
-## Content Development Strategy
+Natural Audience Hook (Choice-Based Poll)
 
-**EXPAND WITH DETAILED ELEMENTS:**
-- Technical weapon specifications and performance data
-- Multiple engagement phases with specific timelines
-- Detailed casualty reports and equipment losses
-- Extensive tactical maneuvering descriptions
-- Electronic warfare and communications disruption
-- Supply chain and logistics complications
-- Weather and terrain impact on operations
-- Individual unit actions and heroic moments
-- Command decision-making processes
-- Intelligence gathering and reconnaissance details
-- Air support and helicopter operations
-- Medical evacuation and battlefield medicine
-- Engineering and demolition activities
-- Counter-intelligence and special operations
-- Post-battle analysis and lessons learned
+Immediately following the shocking opening, pose a direct choice question (A vs. B) to create an instant poll in the comments. This question must frame the script's central conflict (e.g., technology, tactics, force types) and serve as a direct bridge into the narrative.
 
-**NARRATIVE PHASES TO INCLUDE:**
-1. Initial intelligence and preparation (200-250 words)
-2. Opening barrage and first contact (350-400 words)
-3. Main assault and armored engagement (400-500 words)
-4. Technology warfare and drone operations (300-400 words)
-5. Electronic warfare and communications battle (250-300 words)
-6. Decisive phase and turning point (300-350 words)
-7. Aftermath and strategic implications (200-250 words)
-8. Call-to-action conclusion
+Examples:
 
-## Style Guidelines
+"Swarms of low-cost drones... or a single, billion-dollar main battle tank? Which weapon TRULY defines the modern battlefield? Comment your choice below, and let's see how this scenario answers that very question."
 
-**SENTENCE STRUCTURE:** One complete sentence per line
-**CAPITALIZATION:** Strategic use for:
-- Key weapon systems and vehicles
-- Critical locations and tactical positions  
-- Dramatic moments and decisive actions
-- Important military terminology
-- Do NOT capitalize common words like ""the,"" ""and,"" ""was,"" etc.
+"A BOLD preemptive strike... or an IMPENETRABLE defensive fortress? Which strategy leads to absolute victory? Let's find out."
 
-**TONE:** Professional military analysis with dramatic battlefield narrative
-**PERSPECTIVE:** Third-person with tactical insight
-**PACING:** Build tension through escalating phases
+Body (3 parts, 800-1000 words each)
 
-## Example Style:
+Background + Initial Attack: Delve into the reasons for the conflict, with detailed descriptions of forces, weapons, and initial damage.
 
-""The earth trembled.
-At precisely 04:17 local time, RUSSIAN forces unleashed their opening BARRAGE.
-TORNADO-S missile systems opened FIRE across the DONBAS front.
-Over fifty heavy MISSILES slammed into UKRAINIAN positions within thirty minutes.
-LEOPARD 2A6 tanks responded with devastating 120mm rounds.
-The battle for KURAKOV had begun.""
+Defensive Response + Escalation: Enhance the description of defensive systems, countermeasures, and a highly detailed "turning point" in the battle.
 
-## Call-To-Action (CTA) Requirements
+Final Destruction + Aftermath: Focus intensely on the climax, describing the destruction in a rapid, detailed manner.
 
-**END WITH CTA SECTION:**
-After the main narrative, include a compelling call-to-action that:
-- Poses a thought-provoking question about modern warfare
-- Encourages engagement and subscription
-- References the channel: [insert channel youtube]
-- Maintains the serious, analytical tone
+Conclusion (400-600 words) - [EDITED SECTION]
 
-**CTA FORMAT:**
-- 2-3 sentences maximum
-- One rhetorical question about warfare implications
-- Direct subscription call with channel reference
-- Professional military analysis tone
+Thematic Pivot: Begin by analyzing the "victory" from a tactical standpoint, then immediately pivot to question the very meaning of victory.
 
-**Example CTA Style:**
-""Is the future of WARFARE already here?
-This is [insert channel youtube] — subscribe for real-time battlefield updates and strategic insights.""
+Anti-War Commentary: The conclusion must shift from a tactical analysis to a sober, reflective commentary on the horrific human, environmental, and psychological cost of the conflict described. It must explicitly state that there are no true winners in modern warfare.
 
-**EXAMPLE OPENING FORMAT:**
-""On July 15th, 2025, at 04:17 AM local time, the silence over [LOCATION] was shattered.
-RUSSIAN forces unleashed their opening BARRAGE against UKRAINIAN positions.
-The battle for [LOCATION] had begun.""
+Humanize All Sides: Use the conclusion to deconstruct the "enemy" concept, focusing on the humanity of the soldiers on both sides and the civilians impacted.
 
-**MANDATORY PROGRESSION:**
-- Use provided data as foundation for entire scenario
-- Build timeline around the specific date/time given
-- Reference attacking/defending forces exactly as provided
-- Feature specified weapons systems as key elements
-- Maintain chronological progression with clear timestamps
-- Every major phase must have specific time markers
+Advocate for Peace: The core message must be an unambiguous advocacy for diplomacy, de-escalation, and peaceful solutions as the only real form of victory. The tone should be somber and cautionary.
 
-Generate a complete scenario that strictly incorporates ALL provided data elements while maintaining the 1850-2300 word requirement and proper formatting.`;
+Ending Question Requirements - [EDITED SECTION]
 
-const prompt3 = `YouTube Military Script Rewrite Prompt – Optimized for Engagement & Flow
-You are a professional YouTube scriptwriter specializing in high-impact military and strategic storytelling.
+The final question must be the culmination of the anti-war analysis. It must challenge the audience to reject the glorification of military technology and consider the moral imperative for peace. The goal is to leave a lasting impression that questions the very validity of war in the modern age.
 
-I will provide a long-form source script that may be written like a novel, battle simulation, or internal military scenario.
+Example: "In a world with technology capable of such instantaneous and total destruction, is the concept of a 'winnable war' now completely obsolete? And what is our personal responsibility to demand peaceful solutions before the first shot is ever fired?"
 
-Your task is to rewrite it into a tight, engaging, YouTube-ready script based on the rules below:
+TOTAL TARGET: 2900-3300 words (12-15 minutes of narration)
 
-🎯 OUTPUT RULES:
-Output only the rewritten script.
+PACING AND RHYTHM CONTROL
 
-No extra instructions, no production notes, no music cues.
+Opening Shock (Tension 9/10): 4-5 rapid-fire, short sentences (3-6 words).
 
-One sentence per line — formatted for pacing and voice-over delivery.
+Background Build-up (Tension 7/10): Maintain tension while explaining context, mixing long and short sentences.
 
-Writing style:
+Initial Attack (Tension 9/10): Increase the pace as the action begins, using medium-length sentences (6-12 words).
 
-A  cinematic story but not overly lengthy or rambling.
+Peak Climax (Maximum Tension 10/10): Shortest sentences (2-5 words) for maximum effect. Rapid-fire, using strong periods and ellipses.
 
-Clear, modern, and easy to read aloud.
+Resolution (Tension 7/10): Return to longer sentences (12-18 words), describing the aftermath in detail.
 
-Action-driven and emotionally immersive.
+WRITING STYLE & FORMAT
 
-Keep all key military events, strategic decisions, and tactical sequences from the original.
+One Sentence Per Line Rule: Every sentence must be on its own line. This is crucial for TTS pacing.
 
-Condense, streamline, or rephrase to maintain story clarity and flow.
+Word Count Requirement: Minimum 2900 words. Expand sections naturally with more detail to reach the word count.
 
-Use UPPERCASE sparingly, only for dramatic emphasis or turning points (e.g., OPERATION IRON HORIZON, LAUNCH ORDER GIVEN).
+No Reading Instructions: Do not include instructions like [pause] or [emphasize]. Write only the pure script content.
 
-Eliminate poetic filler or excessive jargon — this is not a novel, it's a voiceover script.
+Use of Ellipses for Pacing: Use ellipses ... intentionally to create short, dramatic pauses for the AI narrator.
 
-📢 Call to Action (CTA):
-This is NAVY GOBA — subscribe for real-time battlefield updates and strategic breakdowns.
+Strategic Capitalization for Emphasis: Use ALL CAPS for single words or short phrases that require strong emphasis. Use sparingly.
 
-📝 Strict Word Count:
-The final script must be between 1600 and 1800 words. Going under the limit is acceptable; going over is not.`;
+AUDIENCE INTERACTION LAYERS
+
+Scenario-Based Questions (5-6 times throughout).
+
+Audience Connection Points (2-3 times).
+
+Natural Subscribe Integration (4-5 strategic placements).
+
+Tactical Pauses (3-4 times).
+
+TECHNICAL INTEGRATION
+
+Weave Technical Specifications into the action.
+
+Use Comparisons: "This explosion was equivalent to fifteen city blocks..."
+
+Use Metaphors for Complexity: "The radar system acted like an electronic spider's web..."
+
+EMOTIONAL ENGAGEMENT
+
+Individual Stories: Give names to specific pilots or commanders with key moments.
+
+Moral Framework - [EDITED SECTION]: The narrative should initially present a seemingly clear "defender vs. aggressor" scenario to engage the audience, but the conclusion must deconstruct this binary to reveal the shared human tragedy and moral ambiguity of armed conflict.
+
+Human Cost Balance: The body of the script should focus on tactical excellence, but the conclusion must heavily emphasize the human and environmental cost to serve its anti-war message.
+
+Generate the complete script now.
+`;
+
+const prompt3 = `## PROMPT CHÍNH:
+
+**QUAN TRỌNG - NGUYÊN TẮC VÀNG "MÔ TẢ CHI TIẾT":** Đối với MỌI mục trong dàn ý và database dưới đây, bạn phải cung cấp câu trả lời mang tính MÔ TẢ và GIÀU CHI TIẾT. Đừng chỉ liệt kê tên, hãy giải thích chức năng và tầm quan trọng của nó. Thay vì đưa ra một sự kiện, hãy mô tả nó trong 2-3 câu. Mục tiêu là tạo ra một kho dữ liệu "giàu có", không phải một danh sách gạch đầu dòng.
+
+**Ví dụ về cách làm ĐÚNG:**
+- **Thay vì (SAI):** `Tên lửa: Javelin`
+- **Hãy viết (ĐÚNG):** `Tên lửa chống tăng: Javelin FGM-148, một hệ thống "bắn và quên" dẫn đường bằng hồng ngoại, nổi tiếng với khả năng tấn công nóc xe tăng (top-attack), nơi có lớp giáp mỏng nhất. Tầm bắn hiệu quả 2,500 mét của nó cho phép bộ binh tạo ra các cuộc phục kích chết người từ khoảng cách an toàn.`
+
+**CHỈ DẪN LOGIC & NHẤT QUÁN:** Bạn phải đảm bảo tất cả thông tin bạn tạo ra là nhất quán. Số liệu, tên đơn vị, địa điểm, và dòng thời gian phải khớp nhau hoàn hảo giữa PART A (Cấu trúc câu chuyện) và PART B (Database kỹ thuật). Ví dụ, nếu PART A nói về một cuộc tấn công bằng drone, PART B phải có thông số chi tiết của loại drone đó.
+
+# PART A: SCENARIO OVERVIEW & NARRATIVE STRUCTURE
+
+## BASIC CONCEPT:
+- **Title Hook**: [Catchy title với số liệu shock - VD: "50,000 Soldiers vs 200 Drones"]
+- **Core Message**: [Thông điệp chính - technology vs numbers, precision vs force, etc.]
+- **Conflict Type**: [Asymmetric defense, technological superiority, surprise attack]
+- **Target Audience**: [Military enthusiasts, geopolitics fans, tech warfare interested]
+
+## STORY STRUCTURE (20-minute video):
+### Opening Hook (0-2 min):
+- **Shock opener**: [Specific scene với exact numbers]
+- **Stakes**: [What's at risk - base, civilians, strategic position]
+
+### Background (2-5 min): 
+- **Context**: [Why this conflict started]
+- **Previous events**: [What led to this moment]
+- **Forces involved**: [Brief overview of capabilities]
+
+### Phase 1 - Initial Strike (5-9 min):
+- **Attack method**: [Surprise/overwhelming/coordinated]
+- **First casualties**: [Immediate damage, shock value]
+- **Defender reaction**: [Confusion, rapid response]
+
+### Phase 2 - Escalation (9-15 min):
+- **Defense activation**: [Systems coming online]
+- **Counter-measures**: [Technology vs technology]
+- **Turning point**: [When tide shifts]
+
+### Phase 3 - Resolution (15-18 min):
+- **Decisive action**: [Final overwhelming response]
+- **Destruction details**: [Specific damage, costs]
+- **Enemy defeat**: [How completely they lost]
+
+### Conclusion (18-20 min):
+- **Lessons learned**: [Strategic implications]
+- **Message to world**: [Deterrence, power demonstration]
+- **Call to action**: [Subscribe, comment, support]
+
+# PART B: DETAILED TECHNICAL DATABASE
+
+## BASIC INFORMATION:
+- **Date**: [Specific date from 2024-2026]
+- **Location**: [Specific coordinates, city/base name, strategic importance]
+- **Attacking side**: [Country + specific units/commanders]
+- **Defending side**: [Country + garrison strength/leadership]
+- **Weather/Terrain**: [Conditions affecting combat]
+- **Duration**: [Exact timeline from first shot to surrender]
+
+## GROUND FORCES SPECIFICATIONS:
+
+### ATTACKING FORCE:
+- **Main Battle Tanks**: 
+  - Type: [T-90M, T-80BVM, etc.]
+  - Number: [Exact count]
+  - Specifications: [Armor thickness, gun caliber, speed, cost per unit]
+  - Combat load: [Ammunition types, fuel capacity]
+
+- **Infantry Forces**:
+  - Total: [Exact number + breakdown by unit type]
+  - Equipment: [Body armor, weapons, communications]
+  - Training level: [Elite/Regular/Conscript with experience details]
+  - Support: [Medics, engineers, logistics]
+
+- **Unmanned Systems**:
+  - **Strike UAVs**: [Orlan-10, Lancet-3 with specs]
+    - Range: [km], Payload: [kg], Speed: [km/h]
+    - Guidance: [GPS, optical, AI-assisted]
+    - Cost: [$ per unit]
+  - **Surveillance**: [Reconnaissance capabilities]
+
+- **Artillery Systems**:
+  - Type: [Tornado-S, Grad, Iskander]
+  - Range: [Maximum engagement distance]
+  - Ammunition: [HE, cluster, precision guided]
+  - Rate of fire: [Rounds per minute]
+
+### DEFENDING FORCE:
+- **Defensive Positions**:
+  - **Armor**: [Leopard 2A6, Challenger 2, M1A2]
+    - Numbers: [Available units]
+    - Positioning: [Hull-down, urban, open terrain]
+    - Ammunition: [APFSDS, HEAT, canister]
+
+- **Anti-Tank Systems**:
+  - **Missiles**: [Javelin, NLAW, TOW specifications]
+    - Range: [m], Penetration: [mm RHA equivalent]
+    - Guidance: [Fire-and-forget, wire-guided]
+    - Success rate: [% against modern armor]
+
+- **Air Defense**:
+  - **Radar**: [AN/TPQ-50, NASAMS coverage area]
+  - **Interceptors**: [Patriot, THAAD, Iron Dome]
+  - **SHORAD**: [Stinger, Phalanx CIWS]
+
+- **Artillery Support**:
+  - **Long-range**: [HIMARS, M777, Caesar]
+  - **Precision**: [Excalibur, BONUS, SMArt 155]
+  - **Counter-battery**: [Radar detection, rapid response]
+
+## DOMAIN-SPECIFIC FORCES (Choose relevant domains only):
+
+### IF NAVAL SCENARIO (coastal/island/maritime):
+- **Surface Combatants**: [Destroyer/Frigate class, armament]
+- **Submarines**: [Attack/Strategic, torpedo/missile loadout]  
+- **Naval Aviation**: [Carrier-based, maritime patrol]
+- **Coastal Defense**: [Shore-based missiles, mines]
+- **Amphibious Forces**: [Landing craft, marines, beach assault]
+
+### IF AIR SUPERIORITY FOCUS:
+- **Fighter Aircraft**: 
+  - **Attacking**: [Su-35, Su-57 numbers and loadouts]
+  - **Defending**: [F-35, F-22, F-16 availability]
+  - **Specifications**: [Speed, range, weapons capacity, radar]
+- **Air Defense Network**:
+  - **SAM Systems**: [S-400, Patriot, NASAMS engagement envelopes]
+  - **Early Warning**: [AWACS, ground radar coverage]
+
+### IF GROUND COMBAT FOCUS:
+- **Air Support**: [Close air support, attack helicopters only]
+- **Artillery**: [Counter-battery, precision strikes]
+- **Electronic Warfare**: [Tactical jamming, communications]
+
+### IF COMBINED ARMS:
+- **Relevant domains**: [Specify which 2-3 domains make sense geographically]
+- **Integration**: [How domains support each other]
+
+## ECONOMIC & LOGISTICS DATA:
+- **Attack Cost**: [Total $ for operation including fuel, ammunition]
+- **Defense Cost**: [Interceptor missiles, fuel, personnel]
+- **Damage Assessment**: [Infrastructure, equipment losses in $]
+- **Replacement Time**: [How long to rebuild/restock]
+
+## COMBAT TIMELINE (Minute-by-Minute):
+### H-Hour to H+15:
+- [Specific events with exact times]
+- [Casualties and equipment losses]
+- [Communication intercepts/decisions]
+
+### H+15 to H+45:
+- [Escalation phases]
+- [Technology deployments]
+- [Tactical shifts]
+
+### H+45 to Resolution:
+- [Final assault/defense]
+- [Decisive factors]
+- [Surrender/withdrawal]
+
+## HUMAN STORIES & EMOTIONAL CORE:
+- **Key Commanders**: [Name at least two commanders (one on each side). Describe a critical decision each one makes under pressure. Include a short internal thought or a line of dialogue.]
+- **Soldier's Perspective**: [Describe a specific moment from the point of view of a low-ranking soldier (e.g., a tank gunner, a drone operator, an infantryman). Focus on the sensory details: what they see, hear, and feel.]
+- **Civilian Impact**: [If applicable, describe the situation for civilians. Are they being evacuated? Are they caught in the crossfire? Show the human cost of the conflict.]
+
+## STRATEGIC IMPLICATIONS:
+- **Military Lessons**: [Doctrine changes needed]
+- **Technology Trends**: [What worked/failed]
+- **Geopolitical Impact**: [Alliance shifts, deterrence effects]
+- **Economic Consequences**: [Market reactions, defense spending]
+
+## SCENARIO TYPE SELECTION GUIDE:
+
+**NAVAL SCENARIOS** - Use when:
+- Island defense (Taiwan, Guam, UK)
+- Coastal invasion (Normandy-style landings)
+- Strait control (Hormuz, Malacca, Bosphorus)
+- Carrier strike group vs shore defenses
+- Include: Naval forces + Air support + Coastal ground forces
+
+**GROUND SCENARIOS** - Use when:
+- Continental warfare (Ukraine plains, European borders)
+- Mountain/desert combat (Afghanistan, Middle East)
+- Urban warfare (city sieges, airport battles)
+- Include: Ground forces + Close air support + Artillery
+
+**AIR SUPERIORITY SCENARIOS** - Use when:
+- SEAD operations (suppressing air defenses)
+- Strategic bombing campaigns
+- Fighter vs fighter engagements
+- Include: Air forces + Ground-based air defense + Limited ground support
+
+**COMBINED ARMS** - Use when:
+- Large-scale multi-domain operations
+- Amphibious assaults with air cover
+- Multi-theater campaigns
+- Include: 2-3 relevant domains that make geographic sense
+
+Scenario I want: [Describe your specific idea here + specify primary domain]`;
 
 
 export const Tutorial: React.FC = () => {
@@ -382,13 +527,13 @@ export const Tutorial: React.FC = () => {
                     Here are specific, detailed prompts you can use as a starting point for the "Generate" and "Rewrite" modes to create highly structured military scenarios. Copy these and adapt them to your needs in the Editor.
                 </p>
                 <div className="space-y-3 mt-4">
-                    <PromptToggle title="Prompt Step 1: Extract CONTENT">
+                    <PromptToggle title="Prompt 1: Extract CONTENT">
                         {prompt1}
                     </PromptToggle>
-                    <PromptToggle title="Prompt for Step 2: Generating Full Script">
+                    <PromptToggle title="Prompt 2: Generating Full Script">
                         {prompt2}
                     </PromptToggle>
-                    <PromptToggle title="Prompt for Rewrite Mode: Professional YouTube Style">
+                    <PromptToggle title="Prompt 3: Creater Content">
                         {prompt3}
                     </PromptToggle>
                 </div>
