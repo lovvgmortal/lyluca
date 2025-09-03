@@ -627,7 +627,7 @@ export const Tutorial: React.FC = () => {
                     <PromptToggle title="Prompt 3: Creater Content">
                         {prompt3}
                     </PromptToggle>
-                    <PromptToggle title="Prompt 1: Extract CONTENT">
+                    <PromptToggle title="Prompt 4:  Creater Content Viral ?">
                         {prompt4}
                     </PromptToggle>
                 </div>
