@@ -66,41 +66,149 @@ const PromptToggle: React.FC<{ title: string; children: React.ReactNode }> = ({ 
     );
 };
 
-const prompt1 = `You are a military analyst with 20 years of experience in modern warfare research. 
-Your task is to create a completely fictional but highly realistic combat scenario in terms of technical and tactical accuracy. 
-Use your knowledge of modern weapons, real geography, and combat principles to generate credible information. 
-Provide information only in the following standard format, do not add or omit other content:
- BASIC INFORMATION: 
-    Date: [Specific date from 2024-2026], 
-    Location: [Specific city/village/region name],
-    Attacking side: [Country/force], 
-    Defending side: [Country/force]. 
- ATTACK SCALE: 
-    Tanks: [Number + specific type like T-90M, T-80BVM], 
-    Infantry: [Estimated number], 
-    UAV: [Specific names like Orlan-10, Lancet-3], 
-    Artillery: [Type like Tornado-S, Grad], 
-    Scale: [Small/Medium/Large]. 
- DEFENSIVE WEAPONS: 
-    Tanks: [Type like Leopard 2A6, Challenger 2], 
-    Anti-tank missiles: [Javelin, NLAW, TOW, etc.], 
-    Radar: [AN/TPQ-50, NASAMS],
-    Artillery: [HIMARS, M777, Caesar], 
-    UAV: [Switchblade, TB2]. 
- COMBAT RESULTS: 
-    Duration: [Specific minutes/hours/days], 
-    Attacker losses: [Personnel + equipment numbers], 
-    Defender losses: [Personnel + equipment numbers], 
-    Outcome: [Which side won + degree]. 
- TACTICAL FEATURES: 
-    Main tactics: [Brief description], 
-    Key technology: [Critical weapon/system], 
-    Decisive factors: [Reasons for victory/defeat], 
-    Unique characteristics: [What was special]. 
- STRATEGIC LESSONS: 
-    Main lessons: [Insights about modern warfare], 
-    Importance: [Significance for world military], 
-    Message: [Message sent to major powers].`;
+const prompt1 = `Analyze the following military scenario and extract the entire intent + database in a standard format:
+
+# OVERALL GUIDELINE FOR EXTRACTION:
+
+Your task is not just to find keywords, but to understand and interpret the script. For every field below, adhere to these principles:
+1.  **BE DESCRIPTIVE:** Instead of just extracting a name (e.g., "Tomahawk missile"), briefly explain its role or significance in the context of the script (e.g., "Tomahawk cruise missiles used for the initial long-range strike against coastal defenses").
+2.  **ANALYZE & INFER:** For sections like "Core Message" or "Propaganda/Bias Elements," you must analyze the text and state your conclusion clearly. Do not leave it blank if it's not explicitly stated.
+3.  **QUANTIFY EVERYTHING:** Always extract specific numbers, dates, times, and costs whenever they appear. This data is critical.
+
+Please rearrange the following information structure:
+
+# PART A: STORY STRUCTURE & NARRATIVE ANALYSIS
+
+## BASIC CONCEPT EXTRACTED:
+- **Title Hook**: [Extract exact shock numbers from opening]
+- **Core Message**: [Identify main theme - tech superiority, asymmetric warfare, etc.]
+- **Conflict Type**: [Classify: surprise attack, defensive battle, overwhelming response]
+- **Primary Domain**: [Naval, Ground, Air, Combined]
+
+## NARRATIVE BREAKDOWN:
+### Opening Hook (Minutes 0-2):
+- **Scene described**: [Summarize opening scenario]
+- **Shock numbers**: [Extract specific figures used for impact]
+- **Stakes established**: [What was at risk]
+
+### Background Context (Minutes 2-5):
+- **Conflict trigger**: [What caused this confrontation]
+- **Previous events**: [Any backstory mentioned]
+- **Force introductions**: [How sides were presented]
+
+### Phase 1 Analysis (Minutes 5-9):
+- **Attack method**: [How initial strike was conducted]
+- **Immediate casualties**: [First losses described]
+- **Reaction timing**: [How quickly defense responded]
+
+### Phase 2 Analysis (Minutes 9-15):
+- **Escalation factors**: [What ramped up the conflict]
+- **Technology deployment**: [Key weapons systems activated]
+- **Turning point**: [Moment when tide shifted]
+
+### Phase 3 Analysis (Minutes 15-18):
+- **Decisive action**: [Final crushing blow details]
+- **Destruction scale**: [Extent of damage inflicted]
+- **Victory completeness**: [How total the defeat was]
+
+### Conclusion Analysis (Minutes 18-20):
+- **Lessons stated**: [What strategic points were made]
+- **Global message**: [Deterrent effect claimed]
+- **Audience engagement**: [How CTA was delivered]
+
+# PART B: EXTRACTED TECHNICAL DATABASE
+
+## BASIC INFORMATION:
+- **Date**: [Extract exact date mentioned]
+- **Location**: [Geographic details + coordinates if given]
+- **Attacking side**: [Country + unit designations]
+- **Defending side**: [Forces involved + commanders named]
+- **Duration**: [Exact timeline from text]
+- **Weather/Environment**: [Any conditions mentioned]
+
+## FORCE COMPOSITION EXTRACTED:
+
+### ATTACKING FORCE SPECS:
+- **Personnel**: [Extract all numbers mentioned]
+- **Main Equipment**:
+  - Tanks: [Types, quantities, specifications mentioned]
+  - Aircraft: [Models, loadouts, performance data]
+  - Ships: [Classes, weapons systems, capabilities]
+  - Missiles: [Designations, ranges, warhead types]
+  - Drones: [Models, specs, operational details]
+
+### DEFENDING FORCE SPECS:
+- **Defense Systems**:
+  - Air Defense: [SAM systems, radars, coverage areas]
+  - Naval Defense: [Ship types, missile systems]
+  - Ground Defense: [Armor, anti-tank, artillery]
+  - Electronic Warfare: [Jamming, countermeasures]
+
+## TECHNICAL SPECIFICATIONS FOUND:
+### Weapons Performance Data:
+- **Speeds**: [All Mach numbers, km/h figures mentioned]
+- **Ranges**: [Engagement distances, missile reach]
+- **Accuracy**: [CEP, hit probabilities stated]
+- **Warhead Types**: [Explosive weights, penetration data]
+
+### Economic Data Extracted:
+- **Unit Costs**: [Dollar figures for equipment]
+- **Total Damage**: [Billions in losses claimed]
+- **Operational Costs**: [Mission expenses mentioned]
+
+## TIMELINE RECONSTRUCTION:
+### Minute-by-Minute Breakdown:
+- **H-Hour**: [First shots, initial contact]
+- **H+[X] minutes**: [Key escalation points]
+- **H+[Y] minutes**: [Turning point moment]
+- **H+[Z] minutes**: [Final resolution]
+
+## CASUALTY & DAMAGE ASSESSMENT:
+### Human Losses:
+- **Attacking side**: [KIA, WIA, MIA numbers]
+- **Defending side**: [Personnel casualties]
+- **Civilian impact**: [Any collateral damage]
+
+### Equipment Losses:
+- **Destroyed**: [Specific platforms lost]
+- **Damaged**: [Equipment degraded]
+- **Captured**: [Assets seized]
+
+## STRATEGIC ELEMENTS IDENTIFIED:
+### Geographic Factors:
+- **Terrain advantages**: [How geography affected battle]
+- **Logistical factors**: [Supply line considerations]
+- **Environmental conditions**: [Weather, visibility]
+
+### Technology Factors:
+- **Key innovations**: [Game-changing systems]
+- **System integration**: [How platforms worked together]
+- **Electronic warfare**: [Jamming, cyber elements]
+
+### Tactical Innovations:
+- **Novel approaches**: [New tactics employed]
+- **Doctrine implications**: [How this changes thinking]
+- **Lessons learned**: [Strategic takeaways]
+
+# PART C: NARRATIVE TECHNIQUES ANALYSIS
+
+## ENGAGEMENT METHODS USED:
+- **Hook placement**: [Where shock value was inserted]
+- **CTA timing**: [When subscribe/like was requested]
+- **Question usage**: [Interactive elements deployed]
+- **Emotional beats**: [Human interest moments]
+
+## WRITING STYLE ELEMENTS:
+- **Sentence structure**: [Short/dramatic patterns]
+- **Technical integration**: [How specs were woven in]
+- **Pacing techniques**: [Tension building methods]
+- **Credibility markers**: [Authority establishing elements]
+
+## PROPAGANDA/BIAS ELEMENTS:
+- **Narrative slant**: [Which side favored, how obviously]
+- **Omitted information**: [What wasn't discussed]
+- **Exaggeration indicators**: [Potentially unrealistic claims]
+- **Source credibility**: [How authoritative claims were supported]`;
 
 const prompt2 = `You are an elite military analyst and combat correspondent with 25+ years of experience covering modern warfare. Your mission is to create a completely fictional but tactically realistic military scenario that is EXACTLY 1850-2300 words.
 
@@ -274,7 +382,7 @@ export const Tutorial: React.FC = () => {
                     Here are specific, detailed prompts you can use as a starting point for the "Generate" and "Rewrite" modes to create highly structured military scenarios. Copy these and adapt them to your needs in the Editor.
                 </p>
                 <div className="space-y-3 mt-4">
-                    <PromptToggle title="Prompt for Step 1: Generating Scenario Data">
+                    <PromptToggle title="Prompt Step 1: Extract CONTENT">
                         {prompt1}
                     </PromptToggle>
                     <PromptToggle title="Prompt for Step 2: Generating Full Script">
