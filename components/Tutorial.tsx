@@ -319,8 +319,8 @@ const prompt3 = `## PROMPT CHÍNH:
 **QUAN TRỌNG - NGUYÊN TẮC VÀNG "MÔ TẢ CHI TIẾT":** Đối với MỌI mục trong dàn ý và database dưới đây, bạn phải cung cấp câu trả lời mang tính MÔ TẢ và GIÀU CHI TIẾT. Đừng chỉ liệt kê tên, hãy giải thích chức năng và tầm quan trọng của nó. Thay vì đưa ra một sự kiện, hãy mô tả nó trong 2-3 câu. Mục tiêu là tạo ra một kho dữ liệu "giàu có", không phải một danh sách gạch đầu dòng.
 
 **Ví dụ về cách làm ĐÚNG:**
-- **Thay vì (SAI):** `Tên lửa: Javelin`
-- **Hãy viết (ĐÚNG):** `Tên lửa chống tăng: Javelin FGM-148, một hệ thống "bắn và quên" dẫn đường bằng hồng ngoại, nổi tiếng với khả năng tấn công nóc xe tăng (top-attack), nơi có lớp giáp mỏng nhất. Tầm bắn hiệu quả 2,500 mét của nó cho phép bộ binh tạo ra các cuộc phục kích chết người từ khoảng cách an toàn.`
+- **Thay vì (SAI):** Tên lửa: Javelin
+- **Hãy viết (ĐÚNG):** Tên lửa chống tăng: Javelin FGM-148, một hệ thống "bắn và quên" dẫn đường bằng hồng ngoại, nổi tiếng với khả năng tấn công nóc xe tăng (top-attack), nơi có lớp giáp mỏng nhất. Tầm bắn hiệu quả 2,500 mét của nó cho phép bộ binh tạo ra các cuộc phục kích chết người từ khoảng cách an toàn.
 
 **CHỈ DẪN LOGIC & NHẤT QUÁN:** Bạn phải đảm bảo tất cả thông tin bạn tạo ra là nhất quán. Số liệu, tên đơn vị, địa điểm, và dòng thời gian phải khớp nhau hoàn hảo giữa PART A (Cấu trúc câu chuyện) và PART B (Database kỹ thuật). Ví dụ, nếu PART A nói về một cuộc tấn công bằng drone, PART B phải có thông số chi tiết của loại drone đó.
 
