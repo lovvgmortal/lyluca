@@ -512,7 +512,98 @@ const prompt3 = `## PROMPT CHÍNH:
 
 Scenario I want: [Describe your specific idea here + specify primary domain]`;
 
+const prompt3 = `
 
+
+Using the outline and database provided, write a complete military scenario script optimized for ElevenLabs text-to-speech. Your output must be ONLY the final, raw script text. Do not include any headings, section titles (e.g., "The Fatal Miscalculation"), or any other text that is not part of the narration.
+
+STRUCTURE
+Opening Hook (Shock & Awe)
+4-5 rapid, shocking sentences: Start immediately with the largest numbers of casualties and destruction.
+
+No time/date setup: Jump straight into the action.
+
+Example: "Forty-eight drones destroyed in under sixty seconds. Eight hundred elite soldiers wiped off the battle map. Over twelve billion dollars in advanced military hardware turned to scrap metal in a single counter-attack. This is what happened when..."
+
+Natural Audience Hook (Choice-Based Poll)
+Immediately following the shocking opening, pose a direct choice question (A vs. B) to create an instant poll in the comments. This question must frame the script's central conflict (e.g., technology, tactics, force types) and serve as a direct bridge into the narrative.
+
+Examples:
+
+"Swarms of low-cost drones... or a single, billion-dollar main battle tank? Which weapon TRULY defines the modern battlefield? Comment your choice below, and let's see how this scenario answers that very question."
+
+"A BOLD preemptive strike... or an IMPENETRABLE defensive fortress? Which strategy leads to absolute victory? Let's find out."
+
+"A small, elite guerrilla force... or an overwhelming mechanized army? In this battle, does cunning or sheer POWER win the day?"
+
+Body (3 parts, 800-1000 words each)
+Background + Initial Attack: Delve into the reasons for the conflict, with detailed descriptions of forces, weapons, and initial damage.
+
+Defensive Response + Escalation: Enhance the description of defensive systems, countermeasures, and a highly detailed "turning point" in the battle.
+
+Final Destruction + Aftermath: Focus intensely on the climax, describing the destruction in a rapid, detailed manner.
+
+Conclusion (400-600 words)
+Deep analysis of strategic implications and the global message.
+
+Express a strong sense of patriotism or a righteous cause, framed as the protection of peace and freedom.
+
+Integrate a strong and natural call to action (CTA).
+
+Must end with a compelling question to drive comments and discussion.
+
+Ending Question Requirements
+The final question must be the culmination of the entire analysis. It should force the audience to weigh the strategic, moral, and long-term consequences presented in the video. The goal isn't just to get comments, but to leave a lasting impression and extend the conversation.
+
+TOTAL TARGET: 2900-3300 words (12-15 minutes of narration)
+
+PACING AND RHYTHM CONTROL
+Opening Shock (Tension 9/10): 4-5 rapid-fire, short sentences (3-6 words).
+
+Background Build-up (Tension 7/10): Maintain tension while explaining context, mixing long and short sentences.
+
+Initial Attack (Tension 9/10): Increase the pace as the action begins, using medium-length sentences (6-12 words).
+
+Peak Climax (Maximum Tension 10/10): Shortest sentences (2-5 words) for maximum effect. Rapid-fire, using strong periods and ellipses.
+
+Resolution (Tension 7/10): Return to longer sentences (12-18 words), describing the aftermath in detail.
+
+WRITING STYLE & FORMAT
+One Sentence Per Line Rule: Every sentence must be on its own line. This is crucial for TTS pacing.
+
+Word Count Requirement: Minimum 2900 words. Expand sections naturally with more detail to reach the word count.
+
+No Reading Instructions: Do not include instructions like [pause] or [emphasize]. Write only the pure script content.
+
+Use of Ellipses for Pacing: Use ellipses ... intentionally to create short, dramatic pauses for the AI narrator. This helps modulate the rhythm and build suspense.
+
+Strategic Capitalization for Emphasis: Use ALL CAPS for single words or short phrases that require strong emphasis. Use this technique sparingly to maximize impact. For example: "The system wasn't just disabled; it was COMPLETELY obliterated."
+
+AUDIENCE INTERACTION LAYERS
+Scenario-Based Questions (5-6 times throughout): Use the script's details to pose thought-provoking questions.
+
+Audience Connection Points (2-3 times): Use phrases like "Whether you're active military, a veteran, or a civilian who believes in freedom..." to build rapport.
+
+Natural Subscribe Integration (4-5 strategic placements): Link the call to subscribe to the value being provided. Example: "The specifics of this defense system change everything. Subscribe if you don't want to miss the full picture of modern warfare."
+
+Tactical Pauses (3-4 times): At key turning points, pose a rhetorical question to the audience and then immediately answer it by continuing the narrative. Example: "They had one last option. A final, desperate gamble. Would it pay off?... The commander gave the order."
+
+TECHNICAL INTEGRATION
+Weave Technical Specifications: Integrate technical specs into the action, not as a list.
+
+Use Comparisons: "This explosion was equivalent to fifteen city blocks being destroyed..."
+
+Use Metaphors for Complexity: "The radar system acted like an electronic spider's web..."
+
+EMOTIONAL ENGAGEMENT
+Individual Stories: Give names to specific pilots or commanders with heroic moments.
+
+Moral Framework: A clear good-vs-evil narrative.
+
+Human Cost Balance: Briefly mention casualties to create seriousness, but focus on tactical excellence and the greater meaning of protecting freedom and peace.
+
+Generate the complete script now.
+`;
 export const Tutorial: React.FC = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -535,6 +626,9 @@ export const Tutorial: React.FC = () => {
                     </PromptToggle>
                     <PromptToggle title="Prompt 3: Creater Content">
                         {prompt3}
+                    </PromptToggle>
+                    <PromptToggle title="Prompt 1: Extract CONTENT">
+                        {prompt4}
                     </PromptToggle>
                 </div>
             </TutorialSection>
