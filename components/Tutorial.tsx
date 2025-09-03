@@ -512,7 +512,7 @@ const prompt3 = `## PROMPT CHÍNH:
 
 Scenario I want: [Describe your specific idea here + specify primary domain]`;
 
-const prompt3 = `
+const prompt4 = `
 
 
 Using the outline and database provided, write a complete military scenario script optimized for ElevenLabs text-to-speech. Your output must be ONLY the final, raw script text. Do not include any headings, section titles (e.g., "The Fatal Miscalculation"), or any other text that is not part of the narration.
