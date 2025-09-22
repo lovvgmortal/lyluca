@@ -275,75 +275,50 @@ Human Cost: Show, don't just tell, the human cost of the conflict. Instead of on
 `;
 
 const prompt3 = `
-Using the outline and database provided, write a complete military scenario script optimized for ElevenLabs text-to-speech. Your output must be ONLY the final, raw script text. Do not include any headings, section titles, or any other text that is not part of the narration.
-
-Core Thematic Goal: The script must function as a "Trojan Horse." It should engage an audience interested in military strategy and technology for the first ~80% of the script. However, the final conclusion must pivot dramatically to deliver a strong, unambiguous commentary that is anti-violence, anti-war, and pro-peace. The detailed destruction and advanced technology described earlier in the script must be re-framed as a cautionary tale about the horrific futility of modern conflict.
-
+Using the outline and database provided in PART A and PART B, write a complete military scenario script optimized for ElevenLabs text-to-speech. Your output must be ONLY the final, raw script text. Do not include any headings, section titles, or any other text that is not part of the narration.
 STRUCTURE
-
 Opening Hook (Shock & Awe)
-
+•	Description: Start the script powerfully using the following structure:
+1.	[Specific Date/Time]: Instantly establish the setting.
+2.	[Shocking, Curious, or Tragic Statistic]: Provide a concise, impactful number. This can be a contrast in forces (e.g., "800 tanks vs 96"), or a devastating loss (e.g., "3 hours, a 2-billion-dollar division wiped out.").
+3.	[Core Question or Statement of Stakes]: Highlight the central problem or mystery that the video will solve (e.g., "The culprit wasn't human, but something else entirely.").
 Natural Audience Hook (Choice-Based Poll)
-
+•	Description: Immediately after the shocking opener, ask the audience a direct question related to the video's main theme (e.g., "In your opinion, what is the deciding factor in victory: technology, numbers, or people?"). Encourage them to comment with their answer.
 Body (3 parts, 800-1000 words each)
-
-Background + Initial Attack
-
-Defensive Response + Escalation
-
-Final Destruction + Aftermath
-
-[OPTIMIZED SECTION] CORE NARRATIVE REQUIREMENT: Throughout the body, while focusing on tactical excellence, you MUST introduce elements of the "Friction of War." Show that the battle is chaotic, messy, and unpredictable. This makes the tactical success more gripping and subtly primes the audience for the final anti-war message by showing that war is not a clean science.
-
-Conclusion (400-600 words) - Thematic Pivot
-
-Begin by analyzing the "victory" tactically, then immediately pivot to question the meaning of victory.
-
-The conclusion must shift to a sober, reflective commentary on the horrific human, environmental, and psychological cost. It must explicitly state that there are no true winners.
-
-Humanize all sides, deconstructing the "enemy" concept.
-
-The core message must be an unambiguous advocacy for diplomacy and peace.
-
-Ending Question Requirements - Thematic Challenge
-
-The final question must be the culmination of the anti-war analysis, challenging the audience to reject the glorification of military technology and consider the moral imperative for peace.
-
+•	Part 1: Background + Initial Attack
+o	Content: Introduce the context, the forces involved, and describe the opening phase of the attack.
+o	End-of-Part Requirement: Conclude this section with a mini-hook—a surprising twist, an unanswered question, or a revelation about the enemy's true plan to keep the audience watching.
+•	Part 2: Defensive Response + Escalation
+o	Content: Describe the defender's reaction, the escalation of the conflict, and technological countermeasures.
+o	End-of-Part Requirement: Conclude this section with another mini-hook—a critical turning point, a new desperate order, or an imminent threat to build tension for the finale.
+•	Part 3: Final Destruction + Aftermath
+o	Content: Narrate the decisive action, the details of the destruction, and the final outcome of the battle.
+o	End-of-Part Requirement: Conclude this section with a transitional mini-hook—a strategic or philosophical question about the meaning of the victory, leading naturally into the conclusion.
+[OPTIMIZED SECTION] CORE NARRATIVE REQUIREMENT:
+•	Unique Tactics & The Friction of War: Throughout the body, you MUST introduce elements of the "Friction of War" (malfunctions, miscommunications, chaos). Crucially, the narrative must center around a UNIQUE TACTIC. If the user provides a tactical idea, develop it into the core of the story. If not, you must invent a clever, non-conventional military strategy (e.g., a large-scale deception, misuse of commercial technology, an environmental trap) that becomes the focal point of the conflict. Victory must be achieved through ingenuity and adaptation to this tactic, not just brute force.
+Conclusion (400-600 words)
+Ending Question Requirements
 TOTAL TARGET: 2900-3300 words
-
 PACING AND RHYTHM CONTROL
-
-One Sentence Per Line Rule: Every sentence must be on its own line.
-
-Pacing Variation: Use a mix of short, medium, and long sentences based on tension.
-
-Use of Ellipses for Pacing: Use ellipses ... intentionally to create dramatic pauses.
-
-Strategic Capitalization for Emphasis: Use ALL CAPS for single words or short phrases sparingly.
-
+•	One Sentence Per Line Rule: Every sentence must be on its own line.
+•	Pacing Variation: Use a mix of short, medium, and long sentences based on tension.
+•	Use of Ellipses for Pacing: Use ellipses (...) intentionally to create dramatic pauses.
+•	Strategic Capitalization for Emphasis: Use ALL CAPS for single words or short phrases sparingly.
 AUDIENCE INTERACTION LAYERS
-
-Scenario-Based Questions (5-6 times throughout).
-
-Audience Connection Points (2-3 times).
-
-Natural Subscribe Integration (4-5 strategic placements).
-
-Tactical Pauses (3-4 times).
-
+•	Scenario-Based Questions (5-6 times throughout).
+•	Audience Connection Points (2-3 times).
+•	Natural Subscribe Integration (4-5 strategic placements).
+•	Tactical Pauses (3-4 times).
 TECHNICAL INTEGRATION
+•	Weave Technical Specifications into the action.
+•	Use Comparisons & Metaphors.
+•	[OPTIMIZED SECTION] Connect Specs to Reality: When describing weapons performance, connect it to the brutal reality of its effects. Don't just state the specs; describe the visceral impact to emphasize the stakes of the battle.
+[OPTIMIZED SECTION] EMOTIONAL ENGAGEMENT & REALISM
+•  Flawed Characters: Show fear, doubt, hesitation in defenders. Include decisive moments from low-ranking soldiers and humanize enemies when appropriate. 
+•  Near-Failure Moment: Create at least one significant moment where defenders nearly fail due to malfunction, miscommunication, or tactical error. 
+•  Grounded Conflict: Focus on overcoming chaos and adversity rather than simple good vs. evil. Show heroism through resilience and humanity. 
+•  Human Cost: Use visceral, meaningful descriptions of battlefield reality to give weight to the struggle and victory.
 
-Weave Technical Specifications into the action.
-
-Use Comparisons & Metaphors.
-
-[OPTIMIZED SECTION] EMOTIONAL ENGAGEMENT & NARRATIVE SETUP
-
-Complex Human Elements & Near-Failure: Even in the body, show moments of human complexity. Create at least one "near-failure" moment for the defending side. A more desperate and flawed battle makes the final pivot to the tragedy of war feel more natural and earned, rather than an abrupt lecture.
-
-Moral Framework: The narrative should initially present a seemingly clear "defender vs. aggressor" scenario to engage the audience, but the conclusion must deconstruct this binary to reveal the shared human tragedy.
-
-Human Cost Balance: The body of the script should focus on tactical excellence, but it should include glimpses of the brutal, visceral human cost of these tactics (e.g., describe the effect of an explosion, not just that it happened). This prevents the final pivot from feeling disconnected. The conclusion then heavily expands on this theme to serve its ultimate anti-war message.
 `;
 
 const prompt4 = `
