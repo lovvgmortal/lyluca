@@ -128,7 +128,7 @@ export const generateTitleSummaryAndTimeline = async (providerConfig: ProviderCo
     const titlePrompt = `You are a title optimizer that creates compelling YouTube titles from script content.
 Your task is to analyze the script below and create an optimized title.
 ✅ Title Requirements:
-
+Must always begin with Ukraine's Drones
 Under 80 characters (including spaces)
 Include the primary keyword/topic from the script
 Engaging and click-worthy language
