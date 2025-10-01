@@ -125,24 +125,29 @@ export const generateTitleSummaryAndTimeline = async (providerConfig: ProviderCo
   try {
     const wordCount = script.trim().split(/\s+/).filter(Boolean).length;
 
-    const titlePrompt = `You are an expert YouTube title optimizer specializing in creating high-performing, click-worthy titles.
+    const titlePrompt = `You are an expert YouTube title optimizer.
 
-TASK: Analyze the provided script and generate ONE optimized title.
+TASK: Create ONE optimized title from the script below.
 
-MANDATORY REQUIREMENTS:
-- Must start with: "Ukrainian Drones"
-- Maximum length: 80 characters (including spaces)
-- Include the main keyword/topic from the script
-- Use compelling, action-oriented language that drives clicks
+CRITICAL RULES:
+1. Title MUST start with exactly: "Ukraine's Drones" (these exact 2 words at the beginning)
+2. Maximum 80 characters total (including spaces)
+3. Include the main topic/keyword from the script after "Ukraine's Drones"
+4. Use engaging, click-worthy language
 
-OPTIMIZATION GUIDELINES:
-- Use power words (destroys, reveals, strikes, targets, etc.)
-- Create curiosity or urgency when possible
-- Ensure accuracy to the script content
-- Avoid clickbait or misleading information
+FORMULA:
+Ukraine's Drones + [Action Verb] + [Specific Target/Topic]
 
-OUTPUT FORMAT:
-Provide only the title, nothing else.
+GOOD EXAMPLES:
+✅ "Ukraine's Drones Destroy Russia's Latest Air Defense System"
+✅ "Ukraine's Drones Strike Deep Inside Russian Territory"
+✅ "Ukraine's Drones Target Putin's Elite Naval Fleet"
+
+BAD EXAMPLES:
+❌ "Drones in Ukraine Are Changing Warfare" (doesn't start with "Ukraine's Drones")
+❌ "How Ukraine's Drones..." (adds extra words before)
+
+OUTPUT: Return ONLY the title, nothing else.
 
 
 🧾 Source Script:
