@@ -125,26 +125,25 @@ export const generateTitleSummaryAndTimeline = async (providerConfig: ProviderCo
   try {
     const wordCount = script.trim().split(/\s+/).filter(Boolean).length;
 
-    const titlePrompt = `You are a title optimizer that creates compelling YouTube titles from script content.
-Your task is to analyze the script below and create an optimized title.
-✅ Title Requirements:
-Must always begin with Ukraine's Drones
-Under 80 characters (including spaces)
-Include the primary keyword/topic from the script
-Engaging and click-worthy language
-SEO-friendly structure
-Factual and not misleading
+    const titlePrompt = `You are an expert YouTube title optimizer specializing in creating high-performing, click-worthy titles.
 
-📋 Title Guidelines:
+TASK: Analyze the provided script and generate ONE optimized title.
 
-Use action words, numbers, or power words when relevant
-Create curiosity or urgency without clickbait
-Focus on the most newsworthy or interesting aspect
-Consider what viewers would search for
-Match the tone appropriate for the content type
+MANDATORY REQUIREMENTS:
+- Must start with: "Ukrainian Drones"
+- Maximum length: 80 characters (including spaces)
+- Include the main keyword/topic from the script
+- Use compelling, action-oriented language that drives clicks
 
-📌 Expected Output:
-Output only the optimized title, no explanations or alternatives.
+OPTIMIZATION GUIDELINES:
+- Use power words (destroys, reveals, strikes, targets, etc.)
+- Create curiosity or urgency when possible
+- Ensure accuracy to the script content
+- Avoid clickbait or misleading information
+
+OUTPUT FORMAT:
+Provide only the title, nothing else.
+
 
 🧾 Source Script:
 ${script}`;
